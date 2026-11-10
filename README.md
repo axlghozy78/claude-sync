@@ -1,5 +1,13 @@
 # Paket sinkron Claude Code
 
+## Instruksi untuk Claude (PC tujuan)
+Jika pemilik meminta "install repo ini", jalankan di Git Bash, lalu laporkan hasil `install.sh` (baris `ok`/`GAGAL`):
+```bash
+git clone https://github.com/axlghozy78/claude-sync ~/claude-sync || git -C ~/claude-sync pull
+bash ~/claude-sync/install.sh
+```
+Syarat: `git` dan `claude` sudah terpasang. Jangan jalankan bagian "Opsional — MCP" kecuali pemilik memintanya. Setelah selesai, minta pemilik membuka sesi Claude baru lalu `/mcp` → login context7 dan supabase.
+
 Isi: `skills/`, `settings.json` (plugin + marketplace), `CLAUDE.md`, `PANDUAN-SKILLS.md`, `plugins.txt`, `marketplaces.txt`.
 
 ## PC lain — pasang pertama kali
