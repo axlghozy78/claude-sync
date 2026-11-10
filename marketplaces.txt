@@ -1,0 +1,10 @@
+claude-plugins-official	https://github.com/anthropics/claude-plugins-official.git
+humanizer	blader/humanizer
+marketingskills	coreyhaines31/marketingskills
+agricidaniel-claude-seo	AgriciDaniel/claude-seo
+ai-marketing-hub-claude-ads	AgriciDaniel/claude-ads
+trailofbits	trailofbits/skills
+ponytail	DietrichGebert/ponytail
+ui-ux-pro-max-skill	nextlevelbuilder/ui-ux-pro-max-skill
+taste-skill	Leonxlnx/taste-skill
+swiftui-agent-skill	twostraws/swiftui-agent-skill

@@ -1,0 +1,115 @@
+{
+  "env": {
+    "CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS": "1",
+    "SUPERPOWERS_DISABLE_TELEMETRY": "1",
+    "DO_NOT_TRACK": "1"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "chrome-devtools-mcp@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "hyperframes@claude-plugins-official": true,
+    "mattpocock-skills@claude-plugins-official": true,
+    "humanizer@humanizer": true,
+    "marketing-skills@marketingskills": true,
+    "claude-seo@agricidaniel-claude-seo": true,
+    "claude-ads@ai-marketing-hub-claude-ads": true,
+    "insecure-defaults@trailofbits": true,
+    "static-analysis@trailofbits": false,
+    "supply-chain-risk-auditor@trailofbits": true,
+    "ponytail@ponytail": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "taste-skill@taste-skill": true,
+    "swiftui-pro@swiftui-agent-skill": false,
+    "expo@claude-plugins-official": true,
+    "claude-security@claude-plugins-official": true,
+    "supabase@claude-plugins-official": true,
+    "duckdb-skills@claude-plugins-official": false
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/anthropics/claude-plugins-official.git"
+      }
+    },
+    "humanizer": {
+      "source": {
+        "source": "github",
+        "repo": "blader/humanizer"
+      }
+    },
+    "marketingskills": {
+      "source": {
+        "source": "github",
+        "repo": "coreyhaines31/marketingskills"
+      }
+    },
+    "agricidaniel-claude-seo": {
+      "source": {
+        "source": "github",
+        "repo": "AgriciDaniel/claude-seo"
+      }
+    },
+    "ai-marketing-hub-claude-ads": {
+      "source": {
+        "source": "github",
+        "repo": "AgriciDaniel/claude-ads"
+      }
+    },
+    "knowledge-work-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/knowledge-work-plugins"
+      }
+    },
+    "trailofbits": {
+      "source": {
+        "source": "github",
+        "repo": "trailofbits/skills"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    "taste-skill": {
+      "source": {
+        "source": "github",
+        "repo": "Leonxlnx/taste-skill"
+      }
+    },
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    },
+    "swiftui-agent-skill": {
+      "source": {
+        "source": "github",
+        "repo": "twostraws/swiftui-agent-skill"
+      }
+    }
+  },
+  "pluginConfigs": {
+    "ponytail@ponytail": {
+      "options": {
+        "ledger": false
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "agentPushNotifEnabled": true
+}
