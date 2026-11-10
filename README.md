@@ -15,7 +15,7 @@ Lalu buka sesi Claude baru → `/mcp` → login context7 dan supabase.
 ## Update
 PC utama, setelah tambah/hapus skill atau plugin:
 ```bash
-cd "~/Downloads/NEW PROJECT/claude-sync" && bash export.sh && git add -A && git commit -m "update skill" && git push
+cd ~/"Downloads/NEW PROJECT/claude-sync" && bash export.sh && git add -A && git commit -m "update skill" && git push
 ```
 PC lain:
 ```bash
