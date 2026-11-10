@@ -2,18 +2,25 @@
 
 Isi: `skills/`, `settings.json` (plugin + marketplace), `CLAUDE.md`, `PANDUAN-SKILLS.md`, `plugins.txt`, `marketplaces.txt`.
 
-## PC utama — perbarui paket setelah tambah/hapus skill
+## PC lain — pasang pertama kali
+Butuh: Git for Windows, Claude Code (sudah login), GitHub CLI. Jalankan di Git Bash:
 ```bash
-bash export.sh
+winget install --id GitHub.cli -e
+gh auth login --hostname github.com --git-protocol https --web
+gh repo clone axlghozy78/claude-sync ~/claude-sync
+bash ~/claude-sync/install.sh
 ```
+Lalu buka sesi Claude baru → `/mcp` → login context7 dan supabase.
 
-## PC lain (Git Bash, Claude Code sudah terpasang dan login)
-1. Salin folder ini (flashdisk, Google Drive, atau repo GitHub **private**).
-2. Jalankan:
-   ```bash
-   bash install.sh
-   ```
-3. Buka sesi Claude baru → `/mcp` → login context7 dan supabase.
+## Update
+PC utama, setelah tambah/hapus skill atau plugin:
+```bash
+cd "~/Downloads/NEW PROJECT/claude-sync" && bash export.sh && git add -A && git commit -m "update skill" && git push
+```
+PC lain:
+```bash
+cd ~/claude-sync && git pull && bash install.sh
+```
 
 `install.sh` mencadangkan `settings.json`, `CLAUDE.md`, `PANDUAN-SKILLS.md` lama sebagai `*.bak-<waktu>` di `~/.claude`, dan tidak menghapus skill yang sudah ada di PC itu.
 
